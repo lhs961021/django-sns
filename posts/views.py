@@ -1,8 +1,8 @@
-from django.shortcuts import render, redirect, get_object_or_404
-from .models import Post, Comment
+from .models import Post, Comment, User
+from users.models import Profile
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
-import pdb
+
 
 # Create your views here.
 @login_required
